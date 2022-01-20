@@ -1,0 +1,7 @@
+<div>
+    <dl>
+        <dt>Intitule:</dt><dd><a routerLink="/detail/{{Produit.id}}">{{Produit.title}}</a></dd>
+        <dt>Price:</dt><dd>{{Produit.price.toFixed(2)}}</dd>
+    </dl>
+    <button (click)="addProduct()">Add</button>
+</div>

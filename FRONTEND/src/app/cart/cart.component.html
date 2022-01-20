@@ -1,0 +1,6 @@
+<div *ngFor="let cart of (carts | async)">
+    <app-cart-product [cart]="cart"></app-cart-product>
+</div>
+<div><p>Total : {{ (costTotal | async ) }} €</p></div>
+<div><p>Payment status : {{paymentStatus}}</p></div>
+<button (click)="onGo()">Pay</button>

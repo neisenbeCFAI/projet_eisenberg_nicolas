@@ -1,0 +1,5 @@
+[
+    { "ref": "x1", "libelle": "linux", "prix": 10 },
+    { "ref": "x2", "libelle": "java", "prix": 11 },
+    { "ref": "x3", "libelle": "anuglar", "prix": 12 }
+]

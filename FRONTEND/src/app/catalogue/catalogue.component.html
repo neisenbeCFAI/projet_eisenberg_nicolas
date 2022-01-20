@@ -1,0 +1,7 @@
+<p>catalogue works!</p>
+<div>
+    <input type="text" [(ngModel)]="filter_arg!.title">
+</div>
+<div *ngFor="let p of (catalogue$ | async)! | myfilter:filter_arg!">
+    <app-product [Produit]="p"></app-product>
+</div>

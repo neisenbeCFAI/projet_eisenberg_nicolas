@@ -1,0 +1,8 @@
+<mat-nav-list>
+    <mat-list-item><a routerLink="/" >Home</a></mat-list-item>
+    <mat-list-item><a *ngIf="authStatus" routerLink="/cart/" >Cart</a></mat-list-item>
+    <mat-list-item><a *ngIf="!authStatus" routerLink="/customer/signup" >Sign Up</a></mat-list-item>
+    <mat-list-item><a *ngIf="!authStatus" routerLink="/customer/login" >Login</a></mat-list-item>
+    <mat-list-item><a *ngIf="authStatus" (click)="signOut()" routerLink="/" >SignOut</a></mat-list-item>
+</mat-nav-list>
+<hr/>

@@ -1,0 +1,3 @@
+<div>
+    Titre : {{cart.product.title}} Prix : {{cart.product.price.toFixed(2)}} <button (click)="removeItem(cart.product)">-</button> {{cart.Qte}} <button (click)="addItem(cart.product)">+</button> Prix Tot: {{getCount().toFixed(2)}}
+</div>

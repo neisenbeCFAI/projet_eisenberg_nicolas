@@ -1,0 +1,6 @@
+mat-nav-list {
+    display: flex;
+    flex-direction: row;
+    border: 20px black;
+    padding: 0.5em;
+}
